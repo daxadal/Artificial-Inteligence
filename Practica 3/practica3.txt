@@ -1,0 +1,9 @@
+El estado vendrá representado por 4 enteros entre 1 y 7, (B1,B2,B3,H), que representarán las posiciones de las 3 fichas blancas y el hueco. El estado inicial será (5,6,7,4) y el estado objetivo debe cumplir (B1<=3 ^ B2<=3 ^ B3<=3) V (B1<=4 ^ B2<=4 ^ B3<=4 ^ H<=4). No hay estados de peligro.
+
+Habrá 6 operadores, los cuales se pueden condensar en un opeador parametrizado "MoverHueco(N)" con N \in {-3,-2,-1,1,2,3}. Tiene como precondición que 1<= H+N <=7 y como postcondición:
+if (B1 == H+N) B1 = H;
+if (B2 == H+N) B2 = H;
+if (B3 == H+N) B3 = H;
+H = H+N;
+
+La función de coste valdrá 1 para N \in {-2,-1,1,2}, y valdrá 2 N \in {-3,3}

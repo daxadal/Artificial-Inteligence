@@ -1,0 +1,15 @@
+.metadata/
+.recommenders/
+*/.metadata/
+*.zip
+*.pdf
+*.docx
+*.odt
+**/lib/
+**/bin/
+**/classpath
+**/.setings
+**/.project
+*.xlsx
+/aima-java-AIMA3e/
+/materialJess/
